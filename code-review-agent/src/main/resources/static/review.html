@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Code Review Agent</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="home.html" class="nav-link">← Back to Home</a>
+  <span id="navUsername" class="nav-user"></span>
+  <button id="logoutBtn" class="nav-logout">Logout</button>
+</nav>
+
+<header>
+  <h1>🔍 AI Code Review Agent</h1>
+  <p>Paste your code below and get an instant AI-powered review.</p>
+</header>
+
+<main>
+  <section class="input-section">
+    <label for="language">Language</label>
+    <select id="language">
+      <option value="java">Java</option>
+      <option value="python">Python</option>
+      <option value="javascript">JavaScript</option>
+      <option value="cpp">C++</option>
+      <option value="c">C</option>
+    </select>
+
+    <label for="code">Code</label>
+    <textarea id="code" placeholder="Paste your code here..."></textarea>
+
+    <button id="reviewBtn">Review Code</button>
+    <p id="errorMsg" class="error"></p>
+  </section>
+
+  <section id="resultSection" class="result-section hidden">
+    <h2>Review Result</h2>
+
+    <div class="score-box">
+      <span id="scoreValue">--</span>/100
+    </div>
+
+    <p id="summaryText" class="summary"></p>
+
+    <h3>Strengths</h3>
+    <ul id="strengthsList"></ul>
+
+    <h3>Issues Found</h3>
+    <div id="issuesList"></div>
+  </section>
+
+  <div id="loading" class="hidden">⏳ Reviewing your code, please wait...</div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

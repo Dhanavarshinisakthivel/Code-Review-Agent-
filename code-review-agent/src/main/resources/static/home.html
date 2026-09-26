@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home - AI Code Review Agent</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <span class="nav-brand">🔍 AI Code Review Agent</span>
+  <span id="navUsername" class="nav-user"></span>
+  <button id="logoutBtn" class="nav-logout">Logout</button>
+</nav>
+
+<main class="home-main">
+
+  <section class="hero">
+    <h1>Get instant, AI-powered feedback on your code</h1>
+    <p>
+      Paste any snippet and this tool reviews it like a senior developer would -
+      pointing out bugs, bad naming, security issues, and style problems,
+      along with concrete suggestions to fix them.
+    </p>
+    <button id="startBtn" class="primary-btn">Start Reviewing Code →</button>
+  </section>
+
+  <section class="features">
+    <h2>What it checks for</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>🐛 Bugs & Logic Errors</h3>
+        <p>Catches mistakes that could cause your program to behave incorrectly.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🔒 Security Issues</h3>
+        <p>Flags risky patterns like unsafe input handling or hardcoded secrets.</p>
+      </div>
+      <div class="feature-card">
+        <h3>⚡ Performance</h3>
+        <p>Points out inefficient code that could be written in a faster way.</p>
+      </div>
+      <div class="feature-card">
+        <h3>✨ Style & Naming</h3>
+        <p>Suggests clearer variable/function names and consistent formatting.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>
+        <span class="step-num">1</span>
+        <div>
+          <h3>Paste your code</h3>
+          <p>Copy any function, class, or snippet into the review page and pick its language.</p>
+        </div>
+      </li>
+      <li>
+        <span class="step-num">2</span>
+        <div>
+          <h3>AI analyzes it</h3>
+          <p>Your code is sent securely to an AI model that reads it the way a senior engineer would during a code review.</p>
+        </div>
+      </li>
+      <li>
+        <span class="step-num">3</span>
+        <div>
+          <h3>Get a detailed report</h3>
+          <p>You get an overall score out of 100, a summary, a list of strengths, and specific issues with suggested fixes.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="cta">
+    <button id="startBtn2" class="primary-btn">Start Reviewing Code →</button>
+  </section>
+
+</main>
+
+<script src="home.js"></script>
+</body>
+</html>
